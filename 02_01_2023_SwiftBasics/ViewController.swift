@@ -8,10 +8,67 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var marks : [Double] = [23,23,23,24,25]
     override func viewDidLoad() {
         super.viewDidLoad()
-        basics()
-        basics2()
+        
+        percentage(m: marks)
+        
+        basics6()
+        misc()
+        addition(number1: 10, number2: 20)          //function call
+        
+        var result = squareOfANumber(number: 10)
+        print("Result is : \(result)")
+        //basics()
+        //basics2()
+        //basics3()
+        //basics4()
+    }
+    
+    //passing an array to a function
+    func percentage(m : [Double]){
+        var total : Double = 0
+        
+        for eachM in m {
+            total += eachM
+        }
+        
+        print("Total is : \(total)")
+        var p : Double = (total/125.0) * 100.0
+        print("Percentage is : \(p)")
+    }
+    
+    func basics4(){
+        //closures
+        var multiply : (Int, Int) -> Int = {(a,b) in a*b}
+        print(multiply(10,12))
+    }
+
+    func addition(number1 : Int, number2 : Int){            //function definition
+        print("The addition is : \(number1 + number2)")
+    }
+    
+    //function with arguments & return type
+    func squareOfANumber(number : Int)->Int{
+        return number * number
+    }
+    
+    //cube closure
+    var cube = {
+        (x : Int) -> Int in x * x * x
+    }
+    
+    func misc(){
+        print(cube(7))          //cube closure used
+    }
+    
+    func basics6(){
+       var x = {                                //closure x in function
+            (a : Int) in a * a                  //closure calculating square
+        }
+        print("The value of x is : \(x(8))")        //closure x with value 8
     }
     
     func basics(){
@@ -219,6 +276,16 @@ class ViewController: UIViewController {
         setM.forEach {
             print($0)
         }
-
+    }
+    
+    func basics3(){
+        for x in stride(from: 10, to: 20, by: 2){
+            print(x)
+           // print(x+2)
+        }
+        
+        for y in stride(from: 10, through: 20, by: 2){
+            print(y)
+        }
     }
 }
