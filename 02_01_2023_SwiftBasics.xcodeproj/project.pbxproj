@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68961D0A29712CC000B4C0D2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68961D0929712CC000B4C0D2 /* SecondViewController.swift */; };
+		68961D0C29712CFD00B4C0D2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68961D0B29712CFD00B4C0D2 /* Person.swift */; };
+		68961D0E2971347200B4C0D2 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68961D0D2971347200B4C0D2 /* Student.swift */; };
 		68D733BF296EACEE0089780B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D733BE296EACEE0089780B /* AppDelegate.swift */; };
 		68D733C1296EACEE0089780B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D733C0296EACEE0089780B /* SceneDelegate.swift */; };
 		68D733C3296EACEE0089780B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D733C2296EACEE0089780B /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68961D0929712CC000B4C0D2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		68961D0B29712CFD00B4C0D2 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		68961D0D2971347200B4C0D2 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		68D733BB296EACEE0089780B /* 02_01_2023_SwiftBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 02_01_2023_SwiftBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D733BE296EACEE0089780B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68D733C0296EACEE0089780B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				68D733C7296EACF00089780B /* Assets.xcassets */,
 				68D733C9296EACF00089780B /* LaunchScreen.storyboard */,
 				68D733CC296EACF00089780B /* Info.plist */,
+				68961D0929712CC000B4C0D2 /* SecondViewController.swift */,
+				68961D0B29712CFD00B4C0D2 /* Person.swift */,
+				68961D0D2971347200B4C0D2 /* Student.swift */,
 			);
 			path = 02_01_2023_SwiftBasics;
 			sourceTree = "<group>";
@@ -138,6 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68961D0C29712CFD00B4C0D2 /* Person.swift in Sources */,
+				68961D0E2971347200B4C0D2 /* Student.swift in Sources */,
+				68961D0A29712CC000B4C0D2 /* SecondViewController.swift in Sources */,
 				68D733C3296EACEE0089780B /* ViewController.swift in Sources */,
 				68D733BF296EACEE0089780B /* AppDelegate.swift in Sources */,
 				68D733C1296EACEE0089780B /* SceneDelegate.swift in Sources */,
